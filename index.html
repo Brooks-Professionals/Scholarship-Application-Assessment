@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Scholarship Application Portal</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+
+</head>
+
+<body>
+    <div class="nav">
+        <div class="logo">
+            <a href="index.html"><img src="img/INTI-YourFutureBuiltToday-LOGO_2020.png"></a>
+        </div>
+        <div class="bar">
+            <a href="index.html">&nbsp; Home &nbsp;</a>
+            <a href="about.html">About us</a>
+            <a href="contact.html">Contact us</a>
+        </div>
+    </div>
+
+    <div class="second-nav">
+        <a href="360° Network.html">360° Network&nbsp;|</a>
+        <a href="Journal.html">Journal&nbsp;|</a>
+        <a href="International Students.html">International Students&nbsp;|</a>
+        <a href="News.html">NEWS&nbsp;|</a>
+        <a href="Events.html">Events&nbsp;|</a>
+    </div>
+
+
+
+    <div class="header" id="header">
+        <h1>SCHOLARSHIP APPLICATION ASSESSMENT FORM</h1>
+    </div>
+
+    <div class="All">
+        <div class="full-info">
+            <form action="" class="form">
+                <div class="header" id="header">
+                    <h3>BASIC INFORMATION</h3>
+                </div>
+                <div class="form-data">
+                    <input type="text" placeholder="Enter First Name" id="fname">
+                    <span></span>
+                    <label for="fname" id="fnameError"></label>
+                </div>
+
+                <div class="form-data">
+                    <input type="text" placeholder="Enter SurName" id="surName">
+                    <span></span>
+                    <label for="surName" id="surNameError"></label>
+                </div>
+
+                <div class="form-data">
+                    <p>
+                        <b>Date of Birth:</b>
+                    </p>
+                    <input type="date" id="birthDate">
+                    <span></span>
+                    <label for="birthDate" id="birthDateError"></label>
+                </div>
+
+                <div class="form-data">
+                    <select name="" id="selectGender">
+                    <label for="selectGender" id="selectGenderError"></label>
+                    <option value="">Select Your Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Undefined">Undefined</option>
+                </select>
+                    <span></span>
+                </div>
+
+                <div class="form-data">
+                    <input type="number" placeholder="Enter Phone Number" id="phone">
+                    <span></span>
+                    <label for="phone" id="phoneError"></label>
+                </div>
+
+                <div class="form-data">
+                    <input type="text" placeholder="Enter School Name" id="schoolName">
+                    <span></span>
+                    <label for="schoolName" id="schoolNameError"></label>
+                </div>
+
+                <div class="header" id="header">
+                    <h3>LOCATION INFORMATION</h3>
+                </div>
+
+                <div class="form-data">
+                    <select name="" id="selectContinent">
+                <label for="selectContinent" id="selectContinentError"></label>
+                    <option value="">Select Continent</option>
+                    <option value="Africa">Africa</option>
+                    <option value="Antarctica">Antarctica</option>
+                    <option value="Asia">Asia</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Europe">Europe</option>
+                    <option value="South-America">South America</option>
+                    <option value="North-America">North America</option>
+                </select>
+                    <span></span>
+                </div>
+
+
+                <div class="form-data">
+                    <select id="continentAfrica" class="selects">
+                    <option value="">Select a Country</option>
+                    <option value="Algeria">Algeria</option>
+                    <option value="DR Congo">DR Congo</option>
+                    <option value="Egypt">Egypt</option>
+                    <option value="Ethiopia">Ethiopia</option>
+                    <option value="Ghana">Ghana</option>
+                    <option value="Kenya">Kenya</option>
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="South Africa">South Africa</option>
+                    <option value="Sudan">Sudan</option>
+                    <option value="Tanzania">Tanzania</option>
+                    <option value="Uganda">Uganda</option>
+                </select>
+                    <span></span>
+                </div>
+
+                <div class="form-data">
+                    <select id="continentAntarctica" class="selects">
+                         <option value="">Select a Country</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Chile">Chile</option>
+                    <option value="France">France</option>
+                    <option value=" New Zealand"> New Zealand</option>
+                    <option value="Norway">Norway</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                </select>
+                    <span></span>
+                </div>
+
+                <div class="form-data">
+                    <select id="continentAsia" class="selects">
+                    <option value="">Select a Country</option>
+                    <option value="Bangladesh">Bangladesh</option>
+                    <option value="China">China</option>
+                    <option value="India">India</option>
+                    <option value="Indonesia">Indonesia</option>
+                    <option value="Iran">Iran</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="Philippines">Philippines</option>
+                    <option value="Turkey">Turkey</option>
+                    <option value="Vietnam">Vietnam</option>
+                </select>
+                    <span></span>
+                </div>
+
+                <div class="form-data">
+                    <select id="continentAustralia" class="selects">
+                    <option value="">Select a Country</option>
+                    <option value="Australia">Australia</option>
+                    <option value="French Polynesia">French Polynesia</option>
+                    <option value="Guam">New Guam</option>
+                    <option value="Micronesia">Micronesia</option>
+                    <option value="Nauru">Nauru</option>
+                    <option value="New Zealand">New Zealand</option>
+                    <option value="Samoa">Samoa</option>
+                    <option value="Tokelau">Tokelau/option>
+                    <option value="Vanuatu">Vanuatu</option>
+                </select>
+                    <span></span>
+                </div>
+
+                <div class="form-data">
+                    <select id="continentEurope" class="selects">
+                    <option value="">Select a Country</option>
+                    <option value="Belgium">Belgium</option>
+                    <option value="Czechia">Czechia</option>
+                    <option value="France">France</option>
+                    <option value="Greece">Greece</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Netherlands">Netherlands</option>
+                    <option value="Poland">Poland</option>
+                    <option value="Romania">Romania</option>
+                    <option value="Spain">Spain</option>
+                    <option value="Ukraine">Ukraine</option>
+                </select>
+                    <span></span>
+                </div>
+
+                <div class="form-data">
+                    <select id="continentSouthamerica" class="selects">
+                    <option value="">Select a Country</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Bolivia">Bolivia</option>
+                    <option value="Brazil">Brazil</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Ecuador">Ecuador</option>
+                    <option value="Falkland Islands">Falkland Islands</option>
+                    <option value="French Guiana">French Guiana</option>
+                    <option value="Guyana">Guyana</option>
+                    <option value="Paraguay">Paraguay</option>
+                    <option value="Peru">Peru</option>
+                    <option value="Uruguay">Uruguay</option>
+                </select>
+                    <span></span>
+                </div>
+
+                <div class="form-data">
+                    <select id="continentNorthamerica" class="selects">
+                    <option value="">Select a Country</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Costa Rica">Costa Rica</option>
+                    <option value="Cuba">Cuba</option>
+                    <option value="Dominican Republic">Dominican Republic</option>
+                    <option value="El Salvador">El Salvador</option>
+                    <option value="Guatemala">Guatemala</option>
+                    <option value="Haiti">Haiti</option>
+                    <option value="Jamaica">Jamaica</option>
+                    <option value="Mexico">Mexico</option>
+                    <option value="Puerto Rico">Puerto Rico</option>
+                    <option value="Trinidad and Tob">Trinidad and Tob</option>
+                </select>
+                    <span></span>
+                </div>
+
+
+                <div class="header" id="header">
+                    <h3>ACADEMIC CREDENTIALS</h3>
+                </div>
+
+
+                <div class="schoolInfo">
+                    <div class="left">
+                        <select name="" id="math" class="list">
+                    <label for="math" id="mathError "></label>
+                    <option value="MATHEMATICS">GENERAL MATHEMATICS</option>
+                   </select>
+                        <span></span>
+
+                        <select name="" id="eng" class="list">
+                    <label for="eng" id="engError"></label>
+                    <option value="ENGLISH LANGUAGE">ENGLISH LANGUAGE</option>
+                </select> <span></span>
+
+                        <select name="" id="s" class="list">
+                    <label for="s" id="sError"></label>
+                    <option value="">Select Subject</option>
+                    <option value="CHEMISTRY">CHEMISTRY</option>
+                    <option value="AGRICULTURAL SCIENCE">AGRICULTURAL SCIENCE</option>
+                    <option value="PHYSICS">PHYSICS</option>
+                    <option value="ICT">ICT</option>
+                    <option value="GOVERNMENT">GOVERNMENT</option>
+                    <option value="BIOLOGY">BIOLOGY</option>
+                    <option value="ECONOMICS">ECONOMICS</option>
+                    <option value="LITERATURE">LITERATURE</option>
+                    <option value="GEOGRAPHY">GEOGRAPHY</option>
+                    <option value="COMMERCE">COMMERCE</option>
+                    <option value="ACCOUNTING">ACCOUNTING</option>
+                    <option value="FINE-ARTS">FINE ARTS</option>
+                    <option value="MUSIC">MUSIC</option>
+                </select>
+                        <span></span>
+
+                        <select name="" id="se" class="list">
+                    <label for="se" id="seError"></label>
+                    <option value="">Select Subject</option>
+                    <option value="CHEMISTRY">CHEMISTRY</option>
+                    <option value="AGRICULTURAL SCIENCE">AGRICULTURAL SCIENCE</option>
+                    <option value="PHYSICS">PHYSICS</option>
+                    <option value="ICT">ICT</option>
+                    <option value="GOVERNMENT">GOVERNMENT</option>
+                    <option value="BIOLOGY">BIOLOGY</option>
+                    <option value="ECONOMICS">ECONOMICS</option>
+                    <option value="LITERATURE">LITERATURE</option>
+                    <option value="GEOGRAPHY">GEOGRAPHY</option>
+                    <option value="COMMERCE">COMMERCE</option>
+                    <option value="ACCOUNTING">ACCOUNTING</option>
+                    <option value="FINE-ARTS">FINE ARTS</option>
+                    <option value="MUSIC">MUSIC</option>
+                </select>
+                        <span></span>
+
+                        <select name="" id="sel" class="list">
+                    <label for="sel" id="selError"></label>
+                    <option value="">Select Subject</option>
+                    <option value="CHEMISTRY">CHEMISTRY</option>
+                    <option value="AGRICULTURAL SCIENCE">AGRICULTURAL SCIENCE</option>
+                    <option value="PHYSICS">PHYSICS</option>
+                    <option value="ICT">ICT</option>
+                    <option value="GOVERNMENT">GOVERNMENT</option>
+                    <option value="BIOLOGY">BIOLOGY</option>
+                    <option value="ECONOMICS">ECONOMICS</option>
+                    <option value="LITERATURE">LITERATURE</option>
+                    <option value="GEOGRAPHY">GEOGRAPHY</option>
+                    <option value="COMMERCE">COMMERCE</option>
+                    <option value="ACCOUNTING">ACCOUNTING</option>
+                    <option value="FINE-ARTS">FINE ARTS</option>
+                    <option value="MUSIC">MUSIC</option>
+                </select>
+                        <span></span>
+
+                        <select name="" id="sele" class="list">
+                    <label for="sele" id="seleError "></label>
+                   <option value="">Select Subject</option>
+                    <option value="CHEMISTRY">CHEMISTRY</option>
+                    <option value="AGRICULTURAL SCIENCE">AGRICULTURAL SCIENCE</option>
+                    <option value="PHYSICS">PHYSICS</option>
+                    <option value="ICT">ICT</option>
+                    <option value="GOVERNMENT">GOVERNMENT</option>
+                    <option value="BIOLOGY">BIOLOGY</option>
+                    <option value="ECONOMICS">ECONOMICS</option>
+                    <option value="LITERATURE">LITERATURE</option>
+                    <option value="GEOGRAPHY">GEOGRAPHY</option>
+                    <option value="COMMERCE">COMMERCE</option>
+                    <option value="ACCOUNTING">ACCOUNTING</option>
+                    <option value="FINE-ARTS">FINE ARTS</option>
+                    <option value="MUSIC">MUSIC</option>
+                </select>
+                        <span></span>
+
+                        <select name="" id="selec" class="list">
+                    <label for="selec" id="selecError "></label>
+                    <option value="">Select Subject</option>
+                    <option value="CHEMISTRY">CHEMISTRY</option>
+                    <option value="AGRICULTURAL SCIENCE">AGRICULTURAL SCIENCE</option>
+                    <option value="PHYSICS">PHYSICS</option>
+                    <option value="ICT">ICT</option>
+                    <option value="GOVERNMENT">GOVERNMENT</option>
+                    <option value="BIOLOGY">BIOLOGY</option>
+                    <option value="ECONOMICS">ECONOMICS</option>
+                    <option value="LITERATURE">LITERATURE</option>
+                    <option value="GEOGRAPHY">GEOGRAPHY</option>
+                    <option value="COMMERCE">COMMERCE</option>
+                    <option value="ACCOUNTING">ACCOUNTING</option>
+                    <option value="FINE-ARTS">FINE ARTS</option>
+                    <option value="MUSIC">MUSIC</option>
+                </select>
+                        <span></span>
+
+                        <select name="" id="select" class="list">
+                    <label for="select" id="selectError "></label>
+                    <option value="">Select Subject</option>
+                    <option value="CHEMISTRY">CHEMISTRY</option>
+                    <option value="AGRICULTURAL SCIENCE">AGRICULTURAL SCIENCE</option>
+                    <option value="PHYSICS">PHYSICS</option>
+                    <option value="ICT">ICT</option>
+                    <option value="GOVERNMENT">GOVERNMENT</option>
+                    <option value="BIOLOGY">BIOLOGY</option>
+                    <option value="ECONOMICS">ECONOMICS</option>
+                    <option value="LITERATURE">LITERATURE</option>
+                    <option value="GEOGRAPHY">GEOGRAPHY</option>
+                    <option value="COMMERCE">COMMERCE</option>
+                    <option value="ACCOUNTING">ACCOUNTING</option>
+                    <option value="FINE-ARTS">FINE ARTS</option>
+                    <option value="MUSIC">MUSIC</option>
+                </select>
+                        <span></span>
+
+                    </div>
+
+                    <div class="right">
+                        <div class="scores">
+                            <input type="number" placeholder="Enter Score" id="c" class="list">
+                            <span></span>
+                            <label for="c" id="cError"></label>
+                        </div>
+                        <span></span>
+
+                        <div class="scores">
+                            <input type="number" placeholder="Enter Score" id="co" class="list">
+                            <span></span>
+                            <label for="co" id="coError"></label>
+                        </div>
+                        <span></span>
+
+                        <div class="scores">
+                            <input type="number" placeholder="Enter Score" id="con" class="list">
+                            <span></span>
+                            <label for="con" id="conError"></label>
+                        </div>
+                        <span></span>
+
+                        <div class="scores">
+                            <input type="number" placeholder="Enter Score" id="conf" class="list">
+                            <span></span>
+                            <label for="conf" id="confError"></label>
+                        </div>
+                        <span></span>
+
+                        <div class="scores">
+                            <input type="number" placeholder="Enter Score" id="confu" class="list">
+                            <span></span>
+                            <label for="confu" id="confuError"></label>
+                        </div>
+                        <span></span>
+
+                        <div class="scores">
+                            <input type="number" placeholder="Enter Score" id="confus" class="list">
+                            <span></span>
+                            <label for="confus" id="confusError"></label>
+                        </div>
+                        <span></span>
+
+                        <div class="scores">
+                            <input type="number" placeholder="Enter Score" id="confuse" class="list">
+                            <span></span>
+                            <label for="confuse" id="confuseError"></label>
+                        </div>
+                        <span></span>
+
+                        <div class="scores">
+                            <input type="number" placeholder="Enter Score" id="confused" class="list">
+                            <span></span>
+                            <label for="confused" id="confusedError"></label>
+                        </div>
+                        <span></span>
+
+                    </div>
+                </div>
+
+                <div class="form-data">
+                    <button type="button" id="btnSubmit">Submit Form</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="displayResult " id="displayResult" class="displayResult">
+            <div class="header" id="header">
+                <h5>PERSONAL INFORMATION </h5>
+            </div>
+            <h3><b>First Name: <span id="txtfname"></span></b></h3>
+            <h3><b> Surname: <span id="txtsurName"></span></b></h3>
+            <h3><b>Date of Birth: <span id="txtbirthDate"></span></b></h3>
+            <h3><b>Gender: <span id="txtselectGender"></span></b></h3>
+            <h3><b>Phone Number: <span id="txtphone"></span></b></h3>
+            <h3><b>School Name: <span id="txtschoolName"></span></b></h3>
+
+            <div class="header" id="header">
+                <h5>LOCATION INFORMATION</h5>
+            </div>
+
+            <h3><b>Continent: <span id="txtselectContinent"></span></b></h3>
+            <h3><b>Country: <span id="txtcName"></span></b></h3>
+
+            <div class="show">
+                <div class="left">
+                    <h5>SUBJECTS</h5>
+
+                    <h3><b> <span id="txts"></span></b></h3>
+                    <h3><b> <span id="txtsu"></span></b></h3>
+                    <h3><b> <span id="txtsub"></span></b></h3>
+                    <h3><b> <span id="txtsubj"></span></b></h3>
+                    <h3><b> <span id="txtsubje"></span></b></h3>
+                    <h3><b> <span id="txtsubjec"></span></b></h3>
+                    <h3><b> <span id="txtsubject"></span></b></h3>
+                    <h3><b> <span id="txtsubjects"></span></b></h3>
+                </div>
+
+                <div class="right">
+                    <h5>SCORES</h5>
+
+                    <h3><b> <span id="txtt"></span></b></h3>
+                    <h3><b> <span id="txtth"></span></b></h3>
+                    <h3><b> <span id="txtthe"></span></b></h3>
+                    <h3><b> <span id="txtthem"></span></b></h3>
+                    <h3><b> <span id="txtthemo"></span></b></h3>
+                    <h3><b> <span id="txtthemom"></span></b></h3>
+                    <h3><b> <span id="txtthemome"></span></b></h3>
+                    <h3><b> <span id="txtthemomet"></span></b></h3>
+                </div>
+
+
+            </div>
+            <div>
+                <h2><span id="statusText" class="status"></span></h2>
+            </div>
+        </div>
+    </div>
+
+    <canvas id="myChart" width="200" height="200"></canvas>
+
+
+</body>
+
+<script src=" main.js "></script>
+
+</html>
